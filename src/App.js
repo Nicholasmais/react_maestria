@@ -4,6 +4,7 @@ import TemplateExpressions from './components/TemplateExpressions';
 import Events from './components/Events';
 //Styles
 import './App.css';
+import Challenge from './components/Challenge';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <FirstComopent></FirstComopent>
       <TemplateExpressions></TemplateExpressions>
       <Events></Events>
+      <Challenge></Challenge>
     </>
   );
 }
