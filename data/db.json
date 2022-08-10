@@ -24,6 +24,11 @@
       "name": "asd",
       "price": "12",
       "id": 5
+    },
+    {
+      "name": "sss",
+      "price": "",
+      "id": 6
     }
   ]
 }
