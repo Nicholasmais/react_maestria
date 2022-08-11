@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <h1>Bem vindo, {pessoa}</h1>
+      <h1>Fui obrigado a desligar o servidor pq vcs sao bisonhos, {pessoa}</h1>
       <label>
         <span>Qual seu nome?</span>
         <input type="text" onChange={(e) => {setPessoa(e.target.value)}} />
