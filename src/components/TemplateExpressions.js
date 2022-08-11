@@ -1,5 +1,4 @@
-const TemplateExpressions = () =>{
-    const name = "Nícholas";
+const TemplateExpressions = ({name}) =>{
     const data = {
         age:31,
         job:"Engineer"

@@ -12,8 +12,8 @@ function App() {
   const [products, setProducts] = useState([]);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-
-  const url = "http://localhost:3000/products"
+  const [pessoa,setPessoa] = useState("Desconhecido");
+  const url = "http://172.17.25.44:3000/products"
   
   useEffect(() => {
     async function fecthData(){
@@ -48,7 +48,11 @@ function App() {
 
   return (
     <>
-      <h1>Começando estudos React é noix</h1>
+      <h1>Bem vindo, {pessoa}</h1>
+      <label>
+        <span>Qual seu nome?</span>
+        <input type="text" onChange={(e) => {setPessoa(e.target.value)}} />
+      </label>
       <div>
         <h2>Lista de produtos</h2>
         <ul>
@@ -75,7 +79,7 @@ function App() {
           </div>
 
       </div>
-      <FirstComopent></FirstComopent>
+      <FirstComopent name={pessoa}></FirstComopent>
       <TemplateExpressions></TemplateExpressions>
       <Events></Events>
       <Challenge></Challenge>
